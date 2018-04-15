@@ -8,6 +8,14 @@
           minimum-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
 </head>
+    <style>
+  my-email::after {
+    content: attr(data-domain);
+  }
+  my-email::before {
+    content: attr(data-user) "\0040";
+  }
+</style>
 <style type="text/css">
   html {
   }
@@ -34,9 +42,11 @@
 </style>
 <body>
   <div class="container">
-      We are game development and publishing company based on Pokhara, Nepal with headquarter situated at Sydney, Australia.
-      <br /><br /><br />
-    Find Our Apps On <a href="https://play.google.com/store/apps/developer?id=Zero+Motion"><u>Playstore</u></a>
+      <p>We are game internet-based development and publishing company based on Pokhara, Nepal with headquarter situated at Sydney, Australia.</p>
+      <br />
+      <p><my-email data-user="appdeveloperaustralia" data-domain="gmail.com"></my-email></p>
+      <br />
+    <p>Find Our Apps On <a href="https://play.google.com/store/apps/developer?id=Zero+Motion"><u>Playstore</u></a></p>
   </div>
 
 </body></html>
